@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>名创优品（MINISO）</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Source Han Sans', sans-serif;
+            background-color: #F5F5F5;
+            color: #333333;
+        }
+
+        /* 导航栏样式 */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #FFFFFF;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #E6212A;
+            cursor: pointer;
+        }
+
+        .navbar .nav-items {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar .nav-items div {
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .navbar .nav-items div:hover {
+            color: #E6212A;
+        }
+
+        /* 主内容区域 */
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 80px;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* 卡片样式 */
+        .card {
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            padding: 15px;
+            width: 200px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #E6212A;
+            margin-bottom: 10px;
+        }
+
+        .card-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .card-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #EEEEEE;
+            font-size: 14px;
+        }
+
+        .card-list li:last-child {
+            border-bottom: none;
+        }
+
+        /* 品牌标识模块 */
+        .brand-card {
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            padding: 15px;
+            width: 100px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #E6212A;
+        }
+
+        /* 底部标语 */
+        .slogan {
+            text-align: center;
+            font-family: 'FZ Huang Cao', cursive;
+            color: #E6212A;
+            font-size: 24px;
+            margin: 20px 0;
+        }
+
+        /* 页脚 */
+        .footer {
+            text-align: center;
+            color: #999999;
+            font-size: 12px;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <div class="navbar">
+        <div class="logo">名创优品</div>
+        <div class="nav-items">
+            <div>首页</div>
+            <div>产品</div>
+            <div>关于我们</div>
+            <div>门店查询</div>
+        </div>
+    </div>
+
+    <!-- 主内容区域 -->
+    <div class="main-content">
+        <!-- 火爆产品模块 -->
+        <div class="card">
+            <div class="card-title">火爆产品</div>
+            <ul class="card-list">
+                <li>1. 盲盒产品</li>
+                <li>2. 毛绒公仔</li>
+            </ul>
+        </div>
+
+        <!-- 产品种类模块 -->
+        <div class="card">
+            <div class="card-title">产品种类</div>
+            <ul class="card-list">
+                <li>1. 家居百货</li>
+                <li>2. 美妆个护</li>
+                <li>3. 文具用品</li>
+                <li>4. 毛绒公仔</li>
+                <li>5. 香薰系列</li>
+            </ul>
+        </div>
+
+        <!-- 特色优势模块 -->
+        <div class="card">
+            <div class="card-title">特色优势</div>
+            <ul class="card-list">
+                <li>1. 高性价比</li>
+                <li>2. IP联名丰富</li>
+                <li>3. 产品创新快</li>
+                <li>4. 供应链强大</li>
+            </ul>
+        </div>
+
+        <!-- 品牌标识模块 -->
+        <div class="brand-card">
+            MINISO
+        </div>
+    </div>
+
+    <!-- 底部标语 -->
+    <div class="slogan">美好生活  尽在名创</div>
+
+    <!-- 页脚 -->
+    <div class="footer">
+        @2024 MINISO Group Holding Limited
+    </div>
+</body>
+</html>
