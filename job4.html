@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>手工书皮制作工作坊 · Handmade Book Cover</title>
+    <style>
+        /* 页面整体样式：符合作业基础布局要求 */
+        body {
+            font-family: "Microsoft YaHei", Arial, sans-serif;
+            background: linear-gradient(135deg, #f6ede3, #fdf7f1);
+            color: #3b3025;
+            text-align: center;
+        }
+
+        /* 核心样式.page：仅修改背景色为学号3要求的天空浅蓝#E6F3FF，其他属性按要求保留 */
+        .page {
+            display: inline-block;
+            background-color: #E6F3FF;
+            box-shadow: 0 0 30px rgba(80, 58, 35, 0.25);
+            text-align: left;
+            max-width: 720px;
+        }
+
+        /* 并集选择器：统一所有标题样式，符合作业必须包含的选择器要求 */
+        h1, h2, h3, h4, h5, h6 {
+            color: #5b4636;
+            letter-spacing: 1px;
+        }
+
+        /* 辅助样式：用于标题居中 */
+        .center {
+            text-align: center;
+        }
+
+        /* ID选择器p#intro：强调重要提示，满足“放大+加粗+特殊颜色”要求 */
+        p#intro {
+            font-size: 140%;
+            font-weight: bold;
+            color: #c8493b;
+            margin: 10px 0;
+        }
+
+        /* 活动介绍文本样式：提升可读性 */
+        .intro-text {
+            line-height: 1.7;
+            letter-spacing: 0.5px;
+            margin: 8px 0;
+        }
+
+        /* 表格标题样式：居中对齐 */
+        .section-title {
+            text-align: center;
+            margin: 15px 0;
+        }
+
+        /* 表格基础样式：清晰展示材料信息 */
+        table {
+            width: 100%;
+            background-color: #fdf4e5;
+            font-size: 90%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: #f2ddc2;
+            font-weight: bold;
+            text-align: left;
+            line-height: 2.2;
+            padding: 0 8px;
+        }
+
+        td {
+            line-height: 2.0;
+            padding: 0 8px;
+        }
+
+        /* 表格斑马纹：提升可读性 */
+        table tr:nth-child(even) {
+            background-color: #fbf0de;
+        }
+
+        /* 表格行hover效果：交互优化 */
+        table tr:hover {
+            background-color: #eed8be;
+        }
+
+        /* 后代选择器：仅作用于div内表格中的链接，符合作业要求 */
+        div table a {
+            font-weight: bold;
+            font-size: 110%;
+            color: #8b3b30;
+        }
+
+        /* 链接伪类：完整实现4种状态，符合作业必须包含的选择器要求 */
+        a:link {
+            color: #b6553b;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: #7a7b52;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #e36a4c;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: #3c4f9f;
+            text-decoration: underline;
+        }
+
+        /* 带类名的链接：分别定义red和blue类，符合作业要求 */
+        a.red:link {
+            color: #e25b3d;
+            font-weight: 600;
+        }
+
+        a.red:active {
+            color: #3046a1;
+        }
+
+        a.blue:link {
+            color: #4b7f60;
+            font-weight: 600;
+        }
+
+        a.blue:active {
+            color: #a53aa4;
+        }
+
+        /* 伪元素p::first-letter：段落首字放大变色，符合作业要求 */
+        p::first-letter {
+            font-size: 180%;
+            color: #c45b3f;
+        }
+
+        /* 伪元素div::first-line：div第一行高亮，符合作业要求 */
+        div::first-line {
+            color: #b04832;
+            font-weight: bold;
+        }
+
+        /* 底部公告区样式：缩小字号区分层次 */
+        .notice {
+            font-size: 90%;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        /* 分隔线：视觉分区，无border */
+        .divider {
+            height: 1px;
+            background: linear-gradient(to right, rgba(91,70,54,0), rgba(91,70,54,0.6), rgba(91,70,54,0));
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- 主容器：调用.page样式，符合作业要求 -->
+    <div class="page">
+        <!-- ①顶部标题区：div包裹h1，主题符合学号3要求 -->
+        <div>
+            <h1 class="center">手工书皮制作工作坊 · Handmade Book Cover</h1>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- ②活动介绍区：含h2、2个普通p、1个p#intro，符合要求 -->
+        <div>
+            <h2 id="intro" class="center">用双手为书本定制专属“外衣”</h2>
+            
+            <p class="intro-text">
+                无论是常读的 paperback 还是珍藏的 hardcover，手工书皮都能为其增添独特质感。本次工作坊将从基础裁剪教起，逐步讲解书皮与书本的贴合技巧，即使是没有手工经验的新手，也能轻松上手。
+            </p>
+            
+            <p class="intro-text">
+                现场提供牛皮纸、棉麻布料等基础材料，还可自选丝带、刺绣线等装饰配件——亲手完成的 craft 不仅能保护书本，更能成为个人风格的表达，送给朋友也是满含心意的礼物。
+            </p>
+            
+            <!-- 重要提示：p#intro，符合ID选择器要求 -->
+            <p id="intro">
+                重要提示：材料需按报名人数提前准备，报名后若无法参与，请至少提前24小时联系客服取消，无故缺席将影响后续活动报名资格。
+            </p>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- ③活动报名信息表格区：h3+表格，第一列为“材料名称”，符合学号3要求 -->
+        <div>
+            <h3 class="section-title">活动材料清单（含提供方式）</h3>
+            <table>
+                <tr>
+                    <th>材料名称</th>
+                    <th>材质规格</th>
+                    <th>适用场景</th>
+                    <th>提供方式</th>
+                    <th>备注</th>
+                </tr>
+                <tr>
+                    <td>基础牛皮纸</td>
+                    <td>80g 复古棕 A4</td>
+                    <td>入门练习、日常书皮</td>
+                    <td>主办方免费提供（每人2张）</td>
+                    <td>防水处理，不易破损</td>
+                </tr>
+                <tr>
+                    <td>棉麻布料</td>
+                    <td>多种花色 30×40cm/块</td>
+                    <td>精致书皮、礼品书皮</td>
+                    <td>现场选购（15元/块）</td>
+                    <td>可自选花色，支持水洗</td>
+                </tr>
+                <tr>
+                    <td>装饰丝带</td>
+                    <td>5mm 纯色/条纹款</td>
+                    <td>书皮固定、装饰点缀</td>
+                    <td>主办方免费提供（3色可选）</td>
+                    <td>每色限1米，可拼接</td>
+                </tr>
+                <tr>
+                    <td>刺绣线套装</td>
+                    <td>12色棉线 每卷8米</td>
+                    <td>个性化刺绣图案</td>
+                    <td>自愿选购（20元/套）</td>
+                    <td>含基础刺绣针1枚</td>
+                </tr>
+                <tr>
+                    <td>双面胶</td>
+                    <td>无痕款 1cm×10m</td>
+                    <td>书皮贴合固定</td>
+                    <td>主办方免费提供（每人1卷）</td>
+                    <td>撕除无残留，不损伤书本</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- ④页面链接区：2个带class的链接，跳转地址符合作业要求 -->
+        <div class="center">
+            <div>
+                <a class="red" href="https://hongchenwusdnu.github.io/bookstore/job4.html">查看往期手工书皮作品照片</a><br>
+                <a class="blue" href="job3.html">在线咨询工作坊细节（含工具使用）</a>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- ⑤底部公告区：div.class="notice"，至少3段含br，符合要求 -->
+        <div class="notice">
+            活动时间：2024年X月X日（周六）14:00-17:00，建议提前15分钟到场签到，领取材料包。<br>
+            活动地点：市创意文化园A座203室（地铁3号线“创意园站”D口出，直行50米即达）。<br>
+            工具说明：现场提供剪刀、尺子、针线包等工具，无需自带；个人贵重物品请自行保管。<br>
+            额外福利：完成作品后拍照分享至社交平台并@主办方，可获下次活动10元材料抵扣券。
+        </div>
+    </div>
+</body>
+</html>
